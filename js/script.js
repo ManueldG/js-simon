@@ -8,7 +8,7 @@ function main(){
     var i=0,errore=0;
     while (i<max)
     {   
-        if (random[i] != random.includes(Math.floor( Math.random()*100+1))){
+        if (random[i] != random.includes(Math.floor( Math.random()*100+1))){ // calcolo un numero casuale tra 1 e 100
             
             random[i] = Math.floor( Math.random()*100+1);
             alert(random[i]);
@@ -16,7 +16,7 @@ function main(){
             i++;
         }       
     }
-    i=0;
+    i=0;//azzero il contatore
     setTimeout(function(){
             var val=[];
             
@@ -25,15 +25,15 @@ function main(){
             console.log(val[i]);
             console.log(random[i]);
             if (val[i]!=random[i]){
-                errore++;
-                val[i]='';
+                errore++; // se non sono uguali aggiungo un errore
+                val[i]=''; // cancello il valore in posizione i
 
             }
             else{
-                val[i]=random[i];
+                val[i]=random[i]; // copio i valori corretti in val 
             }
                 
-            i++;
+            i++; // incremento l'indice i
             }
 
             alert ( (errore>0)? //se errore è maggiore di 0
