@@ -6,6 +6,7 @@ function main(){
     var max = 5;
     var random=[];
     var i=0,errore=0;
+    var seconds=30;
     while (i<max)
     {   
         if (random[i] != random.includes(Math.floor( Math.random()*100+1))){ // calcolo un numero casuale tra 1 e 100
@@ -45,7 +46,7 @@ function main(){
             : // altrimenti
             'hai vinto!!!!' // concatena 'hai vinto!!!!!' 
             ); 
-        },1000)
+        },seconds*1000)
 
 }
 
