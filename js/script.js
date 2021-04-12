@@ -18,7 +18,9 @@ function main(){
     }
     setInterval(function(){
             var i=0;
-            prompt('inserisci il primo numero '+i+" di "+max);
+            var val=[];
+            val[i]=prompt('inserisci il primo numero '+i+" di "+max);
+            console.log(val[i]);
             i++;
         },1000)
 
