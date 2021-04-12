@@ -22,7 +22,7 @@ function main(){
             var val=[];
             
             while (i<max){
-            val[i]=prompt('inserisci il primo numero '+i+" di "+max);
+            val[i]=prompt('inserisci il numero '+i+" di "+max);
             console.log(val[i]);
             console.log(random[i]);
             if (val[i]!=random[i]){
