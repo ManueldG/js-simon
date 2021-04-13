@@ -9,7 +9,7 @@ function main(){
     var seconds=30;
     while (i<max)
     {   
-        if (random[i] != random.includes(Math.floor( Math.random()*100+1))){ // calcolo un numero casuale tra 1 e 100
+        if (!random.includes(Math.floor( Math.random()*100+1))){ // calcolo un numero casuale tra 1 e 100
             
             random[i] = Math.floor( Math.random()*100+1);
             alert(random[i]);
